@@ -15,24 +15,24 @@
     <div class="insert">
         <h:form styleClass="insert-form">
             <div class="insert-input-wrapper">
-                <h:outputLabel styleClass="insert-form__label label" for="model">Наименование
-                    <h:inputText styleClass="insert-form__input input" id="model" value="#{customerBean.car.model}" validatorMessage="Введите название товара">
+                <h:outputLabel styleClass="insert-form__label label" for="productName">Наименование
+                    <h:inputText styleClass="insert-form__input input" id="productName" value="#{customerBean.product.productName}" validatorMessage="Введите название товара">
                         <f:validateRequired/>
                     </h:inputText>
                 </h:outputLabel>
-                <h:outputLabel styleClass="insert-form__label label" for="manufacturer">Количество
-                    <h:inputText styleClass="insert-form__input input" id="manufacturer" value="#{customerBean.car.manufacturer}" validatorMessage="Введите количество товара">
+                <h:outputLabel styleClass="insert-form__label label" for="numberOfProduct">Количество
+                    <h:inputText styleClass="insert-form__input input" id="numberOfProduct" value="#{customerBean.product.numberOfProduct}" validatorMessage="Введите количество товара">
                         <f:validateRequired/>
                     </h:inputText>
                 </h:outputLabel>
-                <h:outputLabel styleClass="insert-form__label label" for="amount">Стоимость
-                    <h:inputText styleClass="insert-form__input input" id="amount" value="#{customerBean.car.amount}" validatorMessage="Введите стоимость товара">
+                <h:outputLabel styleClass="insert-form__label label" for="productPrice">Стоимость
+                    <h:inputText styleClass="insert-form__input input" id="productPrice" value="#{customerBean.product.productPrice}" validatorMessage="Введите стоимость товара">
                         <f:validateRequired/>
                         <f:validateDoubleRange minimum="0.001" maximum="1000000000"/>
                     </h:inputText>
                 </h:outputLabel>
-                <h:outputLabel styleClass="insert-form__label label" for="cost">Количество
-                    <h:inputText styleClass="insert-form__input input" id="cost" value="#{customerBean.car.cost}" validatorMessage="Введите дату поставки товара">
+                <h:outputLabel styleClass="insert-form__label label" for="dateOfDelivery">Количество
+                    <h:inputText styleClass="insert-form__input input" id="dateOfDelivery" value="#{customerBean.product.dateOfDelivery}" validatorMessage="Введите дату поставки товара">
                         <f:validateRequired/>
                         <f:validateLongRange minimum="0" maximum="10000000000"/>
                     </h:inputText>
